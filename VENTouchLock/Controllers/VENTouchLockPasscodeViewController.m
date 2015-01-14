@@ -96,10 +96,10 @@ static const NSInteger VENTouchLockViewControllerPasscodeLength = 4;
     }
 }
 
-- (UINavigationController *)embeddedInNavigationController
-{
-    return [super ventouchlock_embeddedInNavigationController];
-}
+//- (UINavigationController *)embeddedInNavigationController
+//{
+//    // return [super ventouchlock_embeddedInNavigationController];
+//}
 
 - (void)keyboardWillShow:(NSNotification *)notification
 {

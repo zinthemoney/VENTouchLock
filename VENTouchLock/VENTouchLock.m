@@ -147,10 +147,8 @@ static NSString *const VENTouchLockUserDefaultsKeyTouchIDActivated = @"VENTouchL
                                           VENTouchLockTouchIDResponse response;
                                           switch (error.code) {
                                               case LAErrorUserFallback:
-                                                  response = VENTouchLockTouchIDResponseUsePasscode;
-                                                  break;
                                               case LAErrorUserCancel:
-                                                  response = VENTouchLockTouchIDResponseCanceled;
+                                                  response = VENTouchLockTouchIDResponseUsePasscode;
                                                   break;
                                               default:
                                                   response = VENTouchLockTouchIDResponseUndefined;

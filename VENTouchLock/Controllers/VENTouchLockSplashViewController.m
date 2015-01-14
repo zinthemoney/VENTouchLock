@@ -100,9 +100,7 @@
 
 - (void)showPasscodeAnimated:(BOOL)animated
 {
-    [self presentViewController:[[self enterPasscodeVC] embeddedInNavigationController]
-                                            animated:animated
-                                          completion:nil];
+    [self presentViewController:[self enterPasscodeVC] animated:animated completion:nil];
 }
 
 - (VENTouchLockEnterPasscodeViewController *)enterPasscodeVC
